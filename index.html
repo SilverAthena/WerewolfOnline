@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Loup-Garou</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Jeu du Loup-Garou</h1>
+    </header>
+
+    <section id="roles">
+        <h2>Rôles</h2>
+        <p>Les rôles seront attribués ici...</p>
+    </section>
+
+    <!-- Firebase Script -->
+    <script type="module">
+        // Import des SDK Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+
+        // Configuration Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyA7k...",
+            authDomain: "werewolf-7b416.firebaseapp.com",
+            projectId: "werewolf-7b416",
+            storageBucket: "werewolf-7b416.appspot.com", 
+            messagingSenderId: "531604198104",
+            appId: "1:531604198104:web:c72a86255147105172fdad",
+            measurementId: "G-W441M3LJVH"
+        };
+
+        // Initialisation de Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Loup-Garou</p>
+    </footer>
+
+</body>
+</html>
